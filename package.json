@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy":"vite build && rimraf docs && copyfiles -u 1 dist/**/* docs",
+    "deploy":"vite build && rimraf docs && copyfiles -u 1 dist/**/* docs && echo > docs/.nojekyll",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
